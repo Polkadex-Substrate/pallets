@@ -1,6 +1,6 @@
 [package]
 name = "ias-verify"
-version = "0.1.4"
+version = "0.1.5"
 description = "a certificate verification and IAS report parser crate for the teerex pallet"
 authors = ["Integritee AG"]
 homepage = "https://integritee.network/"
@@ -23,23 +23,23 @@ version = '2.3.1'
 [dependencies.frame-support]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.12"
+branch = "polkadot-v0.9.13"
 
 [dependencies.sp-std]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.12"
+branch = "polkadot-v0.9.13"
 
 [dependencies.sp-io]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.12"
+branch = "polkadot-v0.9.13"
 #features = ["disable_panic_handler", "disable_oom"]
 
 [dependencies.sp-core]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.12"
+branch = "polkadot-v0.9.13"
 
 [dependencies.webpki]
 git = 'https://github.com/scs/webpki-nostd.git'
