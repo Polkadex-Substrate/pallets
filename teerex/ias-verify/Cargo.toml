@@ -18,32 +18,28 @@ scale-info = { version = "1.0", default-features = false, features = ["derive"] 
 default-features = false
 features = ['derive']
 package = 'parity-scale-codec'
-version = '2.0.0'
+version = '3.0.0'
 
 [dependencies.frame-support]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-std]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-io]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 #features = ["disable_panic_handler", "disable_oom"]
 
 [dependencies.sp-core]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.webpki]
 git = 'https://github.com/scs/webpki-nostd.git'
