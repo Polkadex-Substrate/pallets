@@ -14,7 +14,7 @@ serde = { features = ['derive'], optional = true, version = '1.0.101' }
 log = { version = "0.4.14", default-features = false }
 
 codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '2.0.0' }
-scale-info = { version = "1.0", default-features = false, features = ["derive"] }
+scale-info = { version = "2.1.2", default-features = false, features = ["derive"] }
 frame-support = { default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
 frame-system = { default-features = false, package = 'frame-system', git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
 sp-core = { default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }

@@ -11,8 +11,9 @@ resolver = "2"
 
 [dependencies]
 log = { version = "0.4.14", default-features = false }
-hex-literal = { version = "0.3.2"}
-syn = "=1.0.96" # TODO: Remove this as soon as frame-support-procedural-tools becomes compilable with latest syn version
+hex-literal = { version = "0.3.2" }
+syn = "= 1.0.96" # TODO: Remove this as soon as frame-support-procedural-tools becomes compilable with latest syn version
+primitive-types = { version = "0.11.1", features = ["scale-info"] }
 
 [dependencies.teerex-primitives]
 default-features = false

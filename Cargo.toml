@@ -10,3 +10,4 @@ members = [
     'primitives/teerex',
     'primitives/teeracle',
 ]
+resolver = "2"
