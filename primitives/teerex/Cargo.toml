@@ -24,14 +24,12 @@ path = '../../teerex/ias-verify'
 [dependencies.sp-std]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-core]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [features]
 default = ['std']

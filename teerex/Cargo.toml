@@ -28,46 +28,39 @@ path = './ias-verify'
 [dependencies.frame-support]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.frame-system]
 default-features = false
 package = 'frame-system'
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-io]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-core]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-runtime]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-std]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.timestamp]
 default-features = false
 package = "pallet-timestamp"
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 
 ## benchmarking stuff
@@ -75,15 +68,13 @@ version = "4.0.0-dev"
 default-features = false
 optional = true
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.pallet-balances]
 optional = true
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.test-utils]
 default-features = false
@@ -97,18 +88,15 @@ log = "*"
 [dev-dependencies.externalities]
 package = "sp-externalities"
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "0.10.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dev-dependencies.sp-keyring]
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dev-dependencies.pallet-balances]
 git = "https://github.com/paritytech/substrate.git"
-branch = "master"
-version = "4.0.0-dev"
+branch = "polkadot-v0.9.19"
 
 [dependencies.teerex-primitives]
 default-features = false
