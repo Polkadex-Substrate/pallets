@@ -23,33 +23,33 @@ version = '3.1.5'
 [dependencies.frame-support]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.frame-system]
 default-features = false
 package = 'frame-system'
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.sp-io]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.sp-core]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.sp-runtime]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.sp-std]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.substrate-fixed]
 default-features = false
@@ -61,13 +61,13 @@ package = "substrate-fixed"
 default-features = false
 optional = true
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.timestamp]
 default-features = false
 package = "pallet-timestamp"
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dependencies.pallet-teerex]
 default-features = false
@@ -81,15 +81,15 @@ path = '../tests-utils'
 [dev-dependencies.externalities]
 package = "sp-externalities"
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dev-dependencies.sp-keyring]
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dev-dependencies.pallet-balances]
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [dev-dependencies.hex-literal]
 version = "0.3.2"

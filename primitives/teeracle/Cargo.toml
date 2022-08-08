@@ -18,7 +18,7 @@ package = "substrate-fixed"
 [dependencies.sp-std]
 default-features = false
 git = "https://github.com/paritytech/substrate.git"
-branch = "polkadot-v0.9.19"
+branch = "polkadot-v0.9.27"
 
 [features]
 default = ['std']

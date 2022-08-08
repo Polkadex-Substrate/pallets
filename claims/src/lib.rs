@@ -36,7 +36,7 @@ use sp_runtime::{
 		InvalidTransaction, TransactionValidity, TransactionValidityError, ValidTransaction,
 	},
 };
-use sp_std::{fmt::Debug, prelude::*, vec};
+use sp_std::{convert::TryInto, fmt::Debug, prelude::*, vec};
 
 type CurrencyOf<T> = <<T as Config>::VestingSchedule as VestingSchedule<
 	<T as frame_system::Config>::AccountId,
