@@ -244,7 +244,7 @@ fn parse_report(report_raw: &[u8]) -> Result<SgxReport, &'static str> {
 	// get quote status (mandatory field)
 	let ra_status = match &attn_report["isvEnclaveQuoteStatus"] {
 		Value::String(quote_status) => match quote_status.as_ref() {
-			"OK" => SgxStatus::Ok,
+			"OK" | "SW_HARDENING_NEEDED" => SgxStatus::Ok,
 			"GROUP_OUT_OF_DATE" => SgxStatus::GroupOutOfDate,
 			"GROUP_REVOKED" => SgxStatus::GroupRevoked,
 			"CONFIGURATION_NEEDED" => SgxStatus::ConfigurationNeeded,
