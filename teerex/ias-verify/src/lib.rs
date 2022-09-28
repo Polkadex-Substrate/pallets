@@ -209,7 +209,7 @@ pub fn verify_ias_report(cert_der: &[u8]) -> Result<SgxReport, &'static str> {
 
 	// FIXME: now hardcoded. but certificate renewal would have to be done manually anyway...
 	// chain wasm update or by some sudo call
-	let valid_until = webpki::Time::from_seconds_since_unix_epoch(1573419050);
+	let valid_until = webpki::Time::from_seconds_since_unix_epoch(1679861524);
 	verify_server_cert(&sig_cert, valid_until)?;
 
 	parse_report(netscape.attestation_raw)
