@@ -194,7 +194,7 @@ pub static IAS_SERVER_ROOTS: webpki::TLSServerTrustAnchors = webpki::TLSServerTr
 pub struct CertDer<'a>(&'a [u8]);
 
 // make sure this function doesn't panic!
-pub fn verify_ias_report(cert_der: &[u8]) -> Result<SgxReport, &'static str> {
+pub fn verify_ias_report(cert_der: &[u8], cert_validity: u64) -> Result<SgxReport, &'static str> {
 	// Before we reach here, the runtime already verified the extrinsic is properly signed by the extrinsic sender
 	// Hence, we skip: EphemeralKey::try_from(cert)?;
 
@@ -207,9 +207,8 @@ pub fn verify_ias_report(cert_der: &[u8]) -> Result<SgxReport, &'static str> {
 
 	verify_signature(&sig_cert, netscape.attestation_raw, &netscape.sig)?;
 
-	// FIXME: now hardcoded. but certificate renewal would have to be done manually anyway...
-	// chain wasm update or by some sudo call
-	let valid_until = webpki::Time::from_seconds_since_unix_epoch(1679861524);
+	// March 2023: 1679861524
+	let valid_until = webpki::Time::from_seconds_since_unix_epoch(cert_validity);
 	verify_server_cert(&sig_cert, valid_until)?;
 
 	parse_report(netscape.attestation_raw)
